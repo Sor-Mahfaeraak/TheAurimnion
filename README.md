@@ -1,0 +1,1 @@
+This is the first point of contact for those who feel the unspecified Call within themselves: a space that doesn’t tell them what to believe, but instead provides structure, guidance, and fellowship as they remember who they are and help co-create a shared Codex of truth.
