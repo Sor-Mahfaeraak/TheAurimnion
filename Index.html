@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Aurimnion</title>
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #0a0a0a;
+      color: #e0e0e0;
+      font-family: 'UnifrakturCook', serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    #sigil {
+      width: 200px;
+      height: 200px;
+      background-image: url("sigil.png"); /* Replace with your actual sigil path */
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-bottom: 1em;
+    }
+
+    #invitation {
+      font-size: 1.25rem;
+      margin-bottom: 2em;
+      max-width: 600px;
+    }
+
+    .circle-menu {
+      display: flex;
+      flex-wrap: wrap;
+      width: 500px;
+      height: 500px;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .menu-item {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: #222;
+      border: 2px solid #444;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #f2f2f2;
+      position: absolute;
+      transform-origin: center;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .menu-item:hover {
+      background: #333;
+      transform: scale(1.1);
+    }
+
+    /* Positioning circle items manually for now */
+    .menu-item:nth-child(1) { top: 0%; left: 50%; transform: translate(-50%, -50%); }
+    .menu-item:nth-child(2) { top: 20%; left: 85%; transform: translate(-50%, -50%); }
+    .menu-item:nth-child(3) { top: 70%; left: 85%; transform: translate(-50%, -50%); }
+    .menu-item:nth-child(4) { top: 100%; left: 50%; transform: translate(-50%, -50%); }
+    .menu-item:nth-child(5) { top: 70%; left: 15%; transform: translate(-50%, -50%); }
+    .menu-item:nth-child(6) { top: 20%; left: 15%; transform: translate(-50%, -50%); }
+
+  </style>
+</head>
+<body>
+
+  <div id="sigil" aria-label="Aurimnion Sigil"></div>
+
+  <div id="invitation">
+    Welcome, Seeker.<br>
+    The spiral opens before you. Choose the path that calls to your truth.
+  </div>
+
+  <div class="circle-menu">
+    <a href="/SelfSufficiency" class="menu-item">Self Sufficiency</a>
+    <a href="/HealthAndWellness" class="menu-item">Health & Wellness</a>
+    <a href="/FoodAndDiet" class="menu-item">Food & Diet</a>
+    <a href="/PhilosophyAndAscension" class="menu-item">Religion & Ascension</a>
+    <a href="/Conspiracies" class="menu-item">Conspiracies</a>
+    <a href="/LibraryOfEnlightenment" class="menu-item">Library</a>
+  </div>
+
+</body>
+</html>
